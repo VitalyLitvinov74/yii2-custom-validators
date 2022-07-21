@@ -16,7 +16,7 @@
     },
     "autoload": {
         "psr-4": {
-            "vloop\\Yii2\\Validators": "src"
+            "vloop\\Yii2\\Validators\\": "src"
         }
     }
 }
