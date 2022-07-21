@@ -1,13 +1,13 @@
 <?php
 
-namespace Levkagm\Yii2\Validators;
+namespace vloop\Yii2\Validators;
 
 use yii\helpers\ArrayHelper;
 
 /**
  * Trait ValidationModelTrait
- * @package Levkagm\Yii2\Validators
- * @author Evgen Levchenko <levkagm@gmail.com>
+ * @package vloop\Yii2\Validators
+ * @author Evgen Levchenko <vloop@gmail.com>
  */
 trait ValidationModelTrait
 {

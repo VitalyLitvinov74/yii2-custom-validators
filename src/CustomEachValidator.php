@@ -1,6 +1,6 @@
 <?php
 
-namespace Levkagm\Yii2\Validators;
+namespace vloop\Yii2\Validators;
 
 use yii\base\DynamicModel;
 use yii\base\InvalidConfigException;
@@ -10,8 +10,8 @@ use yii\validators\EachValidator;
 
 /**
  * Class CustomEachValidator
- * @package Levkagm\Yii2\Validators
- * @author Evgen Levchenko <levkagm@gmail.com>
+ * @package vloop\Yii2\Validators
+ * @author Evgen Levchenko <vloop@gmail.com>
  */
 class CustomEachValidator extends EachValidator
 {

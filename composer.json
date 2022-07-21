@@ -1,13 +1,13 @@
 {
-    "name": "levkagm/yii2-custom-validators",
+    "name": "vloop/yii2-custom-validators",
     "description": "Custom validators for Yii2 projects",
     "keywords": ["yii2", "validation", "validate array"],
     "type": "library",
     "license": "MIT",
     "authors": [
         {
-            "name": "Evgen Levchenko",
-            "email": "levkagm@gmail.com"
+            "name": "vitaly litvinov",
+            "email": "cheltend@mail.ru"
         }
     ],
     "require": {
@@ -16,7 +16,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Levkagm\\Yii2\\Validators": "src"
+            "vloop\\Yii2\\Validators": "src"
         }
     }
 }

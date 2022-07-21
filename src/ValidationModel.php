@@ -1,14 +1,14 @@
 <?php
 
-namespace Levkagm\Yii2\Validators;
+namespace vloop\Yii2\Validators;
 
 use yii\base\Model;
 use yii\base\UnknownPropertyException;
 
 /**
  * Class ValidationModel
- * @package Levkagm\Yii2\Validators
- * @author Evgen Levchenko <levkagm@gmail.com>
+ * @package vloop\Yii2\Validators
+ * @author Evgen Levchenko <vloop@gmail.com>
  */
 class ValidationModel extends Model
 {
