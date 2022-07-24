@@ -7,7 +7,7 @@ use yii\helpers\ArrayHelper;
 /**
  * Trait ValidationModelTrait
  * @package vloop\Yii2\Validators
- * @author Evgen Levchenko <vloop@gmail.com>
+ * @author Evgen Levchenko
  */
 trait ValidationModelTrait
 {

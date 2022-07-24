@@ -1,0 +1,9 @@
+version: '3.2'
+
+services:
+  php:
+    container_name: "php-yii2-validators"
+    build:
+       context: ./php/
+    volumes:
+      - '../:/var/www/html'

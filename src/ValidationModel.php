@@ -8,7 +8,7 @@ use yii\base\UnknownPropertyException;
 /**
  * Class ValidationModel
  * @package vloop\Yii2\Validators
- * @author Evgen Levchenko <vloop@gmail.com>
+ * @author Evgen Levchenko
  */
 class ValidationModel extends Model
 {
