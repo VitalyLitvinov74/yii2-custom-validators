@@ -15,6 +15,8 @@ use yii\validators\EachValidator;
  */
 class CustomEachValidator extends EachValidator
 {
+    use ValidatorTrait;
+
     /** @var bool */
     public $stopOnFirstError = false;
 
@@ -63,7 +65,7 @@ class CustomEachValidator extends EachValidator
         }
 
         if ($this->allowMessageFromRule && !empty($validationErrors)) {
-            $this->addErrors($validationErrors, $model);
+            $this->addErrors($model, $validationErrors);
         }
 
         $model->$attribute = $arrayOfValues;
@@ -94,19 +96,5 @@ class CustomEachValidator extends EachValidator
         }
 
         throw new InvalidConfigException('Invalid validation rule: a rule must be an array specifying validator type.');
-    }
-
-    /**
-     * @param array $validationErrors
-     * @param $toModel
-     * @throws \ReflectionException
-     */
-    private function addErrors(array $validationErrors, $toModel){
-        $reflectionClass = new \ReflectionClass(Model::class);
-        $privateErrors = $reflectionClass->getProperty('_errors');
-        $privateErrors->setAccessible(true);
-        $privateErrors->setValue($toModel, $validationErrors);
-        //don't use it. since the model resets the error index, when validating the array
-//        $model->addErrors($errors);
     }
 }

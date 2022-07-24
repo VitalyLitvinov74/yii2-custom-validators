@@ -14,6 +14,8 @@ use yii\validators\Validator;
  */
 class ArrayValidator extends Validator
 {
+    use ValidatorTrait;
+
     /** @var array */
     public $subRules = [];
 
@@ -57,7 +59,7 @@ class ArrayValidator extends Validator
         
         if ($this->validationModel->hasErrors()) {
             if ($model instanceof DynamicModel) {
-                $model->addErrors($this->validationModel->getErrors());
+                $this->addErrors($model, $this->validationModel->getErrors());
             } else {
                 $model->addErrors([$attribute => $this->validationModel->getErrors()]);
             }
